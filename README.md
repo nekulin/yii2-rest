@@ -17,6 +17,13 @@ You can then install the application using the following commands:
 composer global require "fxp/composer-asset-plugin:~1.0.0"
 composer create-project --prefer-dist -s dev "githubjeka/rest-yii2" .
 ```
+```
+rm -rf ~/.composer/cache
+rm -rf /path/to/project/vendor
+rm /path/to/project/composer.lock
+composer global require "fxp/composer-asset-plugin:1.0.0"
+composer --prefer-dist install
+```
 
 ###GETTING STARTED
 
